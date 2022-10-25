@@ -1,0 +1,65 @@
+.cart {
+  max-width: 60rem;
+  background-color: #313131;
+  color: white;
+  z-index: 1000;
+  position: absolute;
+  top: 8rem;
+  left: 25%;
+  /* max-height: 45rem; */
+}
+
+.cart h2 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.overlay {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.btnArea {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.ordBtn {
+  background-color: orange;
+  border-color: transparent;
+  color: white;
+  margin-left: 10px;
+}
+
+.cnclBtn {
+  background-color: white;
+  border-color: transparent;
+  color: orange;
+}
+
+.ordBtn:hover,
+.ordBtn:active {
+  background-color: orange;
+  border-color: transparent;
+  color: white;
+}
+
+.cnclBtn:hover,
+.cnclBtn:active {
+  background-color: white;
+  border-color: orange;
+  color: orange;
+}
