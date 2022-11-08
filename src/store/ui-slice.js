@@ -7,6 +7,12 @@ const uiSlice = createSlice({
     toggle(state) {
       state.cartIsVisible = !state.cartIsVisible;
     },
+    showBill(state) {
+      setTimeout(() => {
+        state.billIsVisible = true;
+      }, 5000);
+      state.billIsVisible = false;
+    },
   },
 });
 

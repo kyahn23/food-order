@@ -63,3 +63,22 @@
   border-color: orange;
   color: orange;
 }
+
+.total {
+  text-align: center;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.total h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.totalCharge {
+  color: red;
+}

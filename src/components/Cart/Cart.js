@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { sendCartData, sendOrdData } from "../../store/cart-actions";
+import { sendOrdData } from "../../store/cart-actions";
 import { uiActions } from "../../store/ui-slice";
-import { cartActions, initialState } from "../../store/cart-slice";
+import { cartActions } from "../../store/cart-slice";
 import Card from "../UI/Card";
 
 import classes from "./Cart.module.css";
@@ -45,11 +45,11 @@ const Cart = (props) => {
         </ul>
         {cartItems.length > 0 && (
           <div>
-            <div>
-              <span>총 수량 : </span>
-              <span>{cart.totalQuantity}개</span>
-              <span>총 결제금액 : </span>
-              <span>{cart.totalCharge}원</span>
+            <div className={classes.total}>
+              <h3>총 수량 </h3>
+              <h3>{cart.totalQuantity}개</h3>
+              <h3>총 결제금액 </h3>
+              <h3 className={classes.totalCharge}>{cart.totalCharge}원</h3>
             </div>
             <div className={classes.btnArea}>
               <button className={classes.cnclBtn} onClick={toggleCartHandler}>
