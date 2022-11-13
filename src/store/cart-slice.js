@@ -5,6 +5,7 @@ export const initialState = {
   totalQuantity: 0,
   totalCharge: 0,
   changed: false,
+  sendOrder: false,
 };
 
 const cartSlice = createSlice({
@@ -26,6 +27,7 @@ const cartSlice = createSlice({
       const existingItem = state.items.find((item) => item.id === newItem.id);
       state.totalQuantity++;
       state.changed = true;
+      state.sendOrder = false;
       if (!existingItem) {
         state.items.push({
           id: newItem.id,
@@ -60,6 +62,7 @@ const cartSlice = createSlice({
       state.totalQuantity = 0;
       state.totalCharge = 0;
       state.changed = true;
+      state.sendOrder = true;
     },
   },
 });

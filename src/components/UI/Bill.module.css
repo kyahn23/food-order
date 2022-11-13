@@ -1,0 +1,40 @@
+.bill {
+  max-width: 45rem;
+  background-color: white;
+  border-radius: 6px;
+  z-index: 1000;
+  position: absolute;
+  top: 8rem;
+  left: 30%;
+  right: 30%;
+  height: 30rem;
+}
+
+.bill h2 {
+  font-size: 2rem;
+  margin: 5rem 2rem 1rem 2rem;
+  text-align: center;
+}
+
+.bill .ordNo {
+  color: red;
+  margin: 5rem 1rem;
+  font-size: 3rem;
+}
+
+.bill .txt {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.overlay {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}

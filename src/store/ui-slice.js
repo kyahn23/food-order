@@ -8,9 +8,9 @@ const uiSlice = createSlice({
       state.cartIsVisible = !state.cartIsVisible;
     },
     showBill(state) {
-      setTimeout(() => {
-        state.billIsVisible = true;
-      }, 5000);
+      state.billIsVisible = true;
+    },
+    hideBill(state) {
       state.billIsVisible = false;
     },
   },
